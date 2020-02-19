@@ -4,3 +4,18 @@ Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
 */
+
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NORMALIZE  */
+body {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+}
