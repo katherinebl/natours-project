@@ -112,6 +112,11 @@ body {
     color: #777;
 }
 
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
 /* Pseudoelements */
 .btn::after {
     content: "";
@@ -135,6 +140,7 @@ body {
     opacity: 0;
 }
 
+/* Animations */
 @keyframes moveInLeft {
     0% {
         opacity: 0;
@@ -164,5 +170,17 @@ body {
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
