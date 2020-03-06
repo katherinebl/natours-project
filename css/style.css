@@ -24,26 +24,23 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-/* Animate logo WITHOUT SHAKING
-.logo-box:hover > .logo  {
-    animation: moveInRight 1s ease-out;
-} */
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* Animate logo WITHOUT SHAKING
+    .logo-box:hover > .logo  {
+        animation: moveInRight 1s ease-out;
+    } */ }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
 
 .primary-heading {
   color: #fff;

@@ -5,6 +5,7 @@ $color-primary-dark: #28b485;
 
 $color-dark-grey: #777;
 $color-white: #fff;
+$color-black: #000;
 
 /* RESET */
 *,
@@ -41,29 +42,29 @@ body {
     position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
-
-.header__logo {
-    height: 3.5rem;
-}
-
-/* Animate logo WITHOUT SHAKING
-.logo-box:hover > .logo  {
-    animation: moveInRight 1s ease-out;
-} */
-
-.header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    /* Animate logo WITHOUT SHAKING
+    .logo-box:hover > .logo  {
+        animation: moveInRight 1s ease-out;
+    } */
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .primary-heading {
@@ -72,26 +73,26 @@ body {
     margin-bottom: 5rem;
 
     backface-visibility: hidden;
-}
 
-.primary-heading--main {
-    display: block;
-    font-weight: 400;
-    font-size: 6rem;
-    letter-spacing: 3.5rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
-
-.primary-heading--sub {
-    display: block;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 1.75rem;
-
-    animation: moveInRight 1s ease-out;
+    &--main {
+        display: block;
+        font-weight: 400;
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    &--sub {
+        display: block;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+    
+        animation: moveInRight 1s ease-out;
+    }
 }
 
 /* Pseudoclasses */
@@ -108,12 +109,12 @@ body {
 
 .btn:hover {
     transform: translateY(-.3rem);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
 }
 
 .btn:active {
     transform: translateY(-.1rem);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
 }
 
 .btn--white {
