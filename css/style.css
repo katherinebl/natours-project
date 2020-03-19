@@ -115,6 +115,17 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2);
+    background-color: purple;
+    color: seashell;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 4rem; }
 
 .header {
   height: 95vh;
