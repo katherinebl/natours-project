@@ -128,7 +128,15 @@ body {
   .row .col-1-of-2 {
     width: calc((100% - 4rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2*4rem) / 3); }
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
 
 .header {
   height: 95vh;
